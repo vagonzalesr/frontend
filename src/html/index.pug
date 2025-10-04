@@ -1,0 +1,706 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "Home index"
+
+block content
+  section.section
+    .container-fluid.bg-color-1
+      .row
+        .col-lg-6.p-0
+          .owl-carousel.carousel-big-banners
+            .big-banner-item
+              .big-banner-item-bg
+                img(src="/gfx/png/bg-1.png")
+              .big-banner-item-body.theme-1
+                .big-banner-item-title
+                  h2 Una Nueva vida
+                  h4 disfruta de un Nuevo estilo
+            .big-banner-item
+              .big-banner-item-bg
+                img(src="/gfx/png/bg-2.png")
+              .big-banner-item-body.theme-1
+                .big-banner-item-title
+                  h2 Una Nueva vida
+                  h4 disfruta de un Nuevo estilo
+            .big-banner-item
+              .big-banner-item-bg
+                img(src="/gfx/png/bg-3.png")
+              .big-banner-item-body.theme-1
+                .big-banner-item-title
+                  h2 Ellos también cuentan
+                  h4 disfruta de un Nuevo estilo
+        .col-lg-5.p-0.bg-design-1
+          .pt-1.pb-5.px-1.p-lg-5
+            .contact-item
+              .contact-thanks(style="display:none;")
+                form.row.gy-3
+                  .col-12
+                    .bg-corners.text-center.px-4.px-lg-5
+                      .bg-corner-1
+                      .bg-corner-2
+                      .bg-corner-3
+                      .bg-corner-4
+                      .row.gy-3
+                        .col-lg-12
+                          .d-grid.gap-3
+                            .highlight-title-simple Gracias por contactarnos
+                            p En breve un asesor se comunicará contigo
+                            .row.justify-content-center.gy-4
+                              .col-lg-8
+                                a.btn.btn-secondary(href="#") Descargar brochure
+                              .col-lg-12
+                                .box-item
+                                  .row.justify-content-between
+                                    .col-12
+                                      .fw-bold También puedes contactarnos o visitarnos:
+                                    .col-lg-auto
+                                      span.icon-phone.me-2.color-primary
+                                      span 924389800
+                                    .col-lg-auto
+                                      span.icon-envelope.me-2.color-primary
+                                      span informeventas@arteco.pe
+                  .col-12
+                    .px-5
+                      .row.gy-4.text-center
+                        .col-12
+                          a.btn.btn-primary(href="#") Agendar visita
+                        .col-12
+                          .row.align-items-center.justify-content-center
+                            .col-2.col-lg-auto
+                              a.social-network(href="#")
+                                span.icon-linkedin.icon-md.color-primary
+                            .col-2.col-lg-auto
+                              a.social-network(href="#")
+                                span.icon-facebook.icon-md.color-primary
+                            .col-2.col-lg-auto
+                              a.social-network(href="#")
+                                span.icon-instagram.icon-md.color-primary
+                            .col-2.col-lg-auto
+                              a.social-network(href="#")
+                                span.icon-youtube.icon-md.color-primary
+              .contact-form#form-banner
+                row.gy-3
+                  .col-12
+                    .bg-corners.px-4.px-lg-5
+                      .bg-corner-1
+                      .bg-corner-2
+                      .bg-corner-3
+                      .bg-corner-4
+                      .row.gy-3
+                        .col-lg-6
+                          input.form-control(type="text" placeholder="Nombre")
+                        .col-lg-6
+                          input.form-control(type="text" placeholder="Apellido")
+                        .col-6
+                          input.form-control(type="text" placeholder="DNI")
+                        .col-6
+                          input.form-control(type="text" placeholder="Teléfono")
+                        .col-lg-12
+                          input.form-control(type="text" placeholder="Correo electrónico")
+                        .col-6
+                          select.form-select
+                            option(value="" selected disabled) Cant. Dorm.
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                        .col-6
+                          select.form-select
+                            option(value="" selected disabled) Piso
+                            option(value="1") 1
+                            option(value="2") 2
+                            option(value="3") 3
+                  .col-12
+                    .px-5
+                      .row.gy-3
+                        .col-12
+                          .form-check.d-lg-flex.gap-3.align-items-center
+                            input.form-check-input#terms(type="checkbox")
+                            label.form-check-label.label-xs(for="terms") He leído y acepto los <a href="/terminos_y_condiciones.html">Terminos y Condiciones de Arteco</a>
+                        .col-12
+                          .form-check.d-lg-flex.gap-3.align-items-center
+                            input.form-check-input#terms(type="checkbox")
+                            label.form-check-label.label-xs(for="terms") Autorizo a Arteco para que relice las actividades descritas en la <a href="/politica_de_privacidad.html">Política de Privacidad</a>
+                        .col-12
+                          .text-center
+                            a.btn.btn-primary.text-uppercase.send-contact(href="#") Quiero información
+  section.section.section-design-left
+    .container-fluid.bg-image-1
+      .row
+        .col-lg-6.p-0.bg-linear-1.section-caption-parent
+          .py-4.py-lg-5.px-1.p-lg-5
+            .big-banner-item-2
+              .big-banner-item-body
+                .big-banner-item-title.py-4.py-lg-5
+                  .highlight-brand ASTORIA
+                  h4.pb-3 Hasta ahora no viste nada igual
+                  p.pb-3 Texto que hable sobre concepto arquitectónico y buyer. Texto que hable sobre concepto arquitectónico y buyer.
+                  hr
+                  .row
+                    .col-auto
+                      span.icon-location.icon-lg.color-primary
+                    .col-10
+                      p.fw-bold Ubicación
+                      p Av.República de Chile 699, Jesús María
+                  hr
+          .section-caption
+            .row
+              .col-6.col-lg-4
+                .section-caption-item
+                  .row.justify-content-lg-center
+                    .col-4.col-lg-auto
+                      span.icon-length.icon-lg
+                    .col-8.col-lg-auto
+                      p Metraje
+                      span.fw-bold.color-primary Desde 54m2 
+              .col-6.col-lg-4 
+                .section-caption-item
+                  .row.justify-content-lg-center
+                    .col-4.col-lg-auto.text-center
+                      span.icon-bed.icon-lg
+                    .col-8.col-lg-auto
+                      p Dormitorios
+                      span.fw-bold.color-primary 2-3 - Duplex
+              .col-lg-4
+                .section-caption-item
+                  .row.justify-content-lg-center
+                    .col-2.col-lg-auto
+                      span.icon-price-tag.icon-lg
+                    .col-10.col-lg-auto
+                      p Precio
+                      span.fw-bold.color-primary S/ 250, 000 - S/ 475, 000
+        .col-lg-6.p-0
+          .video-container
+            .video-poster
+            a.video-play-button(href="#" data-bs-toggle="modal" data-bs-target="#modalVideo")
+  section.section-hash.section.section-design-right#features
+    .container.py-4.py-lg-5
+      .row.pt-5
+        .col-12.pt-5
+          .highlight-title Características del proyecto
+        .col-12.pt-3
+          .row.gy-4
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-building.icon-md.color-secondary
+                .col-lg-9
+                  span Ingreso vehicular automatizado
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-led.icon-md.color-secondary
+                .col-lg-9
+                  span Luminarias led en las áreas comunes
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-earthquake.icon-md.color-secondary
+                .col-lg-9
+                  span Construcción sismo resistente
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-garden.icon-md.color-secondary
+                .col-lg-9
+                  span Jardinería en azotea
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-garage.icon-md.color-secondary
+                .col-lg-9
+                  span Ingreso vehicular automatizado
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-fire-alarm.icon-md.color-secondary
+                .col-lg-9
+                  span Sistema de alarma contra incendios
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-24.icon-md.color-secondary
+                .col-lg-9
+                  span Portería las 24 horas
+            .col-6.col-lg-3
+              .row.justify-content-center.align-items-center.text-center.text-lg-start
+                .col-lg-auto
+                  span.icon-spotlight.icon-md.color-secondary
+                .col-lg-9
+                  span Sensores automáticos de luces en sótanos
+        .col-12.pt-5
+          .owl-carousel.carousel-images#sync1.py-5
+            .image
+              .image-corner-1
+              .image-corner-2
+              .image-corner-3
+              .image-corner-4
+              a.image-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalPhotos")
+              img(src="/gfx/png/dormitorio.png")
+            .image
+              .image-corner-1
+              .image-corner-2
+              .image-corner-3
+              .image-corner-4
+              a.image-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalPhotos")
+              img(src="/gfx/png/dormitorio.png")
+            .image
+              .image-corner-1
+              .image-corner-2
+              .image-corner-3
+              .image-corner-4
+              a.image-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalPhotos")
+              img(src="/gfx/png/dormitorio.png")
+            .image
+              .image-corner-1
+              .image-corner-2
+              .image-corner-3
+              .image-corner-4
+              a.image-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalPhotos")
+              img(src="/gfx/png/dormitorio.png")
+          .row.justify-content-center.pb-3.py-lg-3
+            .col-11.col-lg-8
+              .row#sync2
+                .col-3
+                  a.image-thumbnail.current(href="#")
+                    img.img-fluid(src="/gfx/png/dormitorio.png")
+                .col-3
+                  a.image-thumbnail(href="#")
+                    img.img-fluid(src="/gfx/png/dormitorio.png")
+                .col-3
+                  a.image-thumbnail(href="#")
+                    img.img-fluid(src="/gfx/png/dormitorio.png")
+                .col-3
+                  a.image-thumbnail(href="#")
+                    img.img-fluid(src="/gfx/png/dormitorio.png")
+  section.section.section-design-left
+    section.section-hash.bg-design-2#gallery
+      .container.py-4.py-lg-5
+        .row.py-lg-5
+          .col-12.pt-5.text-center
+            .highlight-title-center Espacios ideales de tu próximo depa
+          .col-12.pt-5
+            .row.justify-content-center.mb-5
+              .col-lg-7
+                ul.nav.nav-tabs#tabParent(role="tablist")
+                  li.nav-item(role="presentation")
+                    button.nav-link.active#interior-tab(data-bs-toggle="tab" data-bs-target="#interior" type="button" role="tab" aria-controls="interior" aria-selected="true") Interior
+                  li.nav-item(role="presentation")
+                    button.nav-link#areas-tab(data-bs-toggle="tab" data-bs-target="#areas" type="button" role="tab" aria-controls="areas" aria-selected="false") Áreas comunes
+                  li.nav-item(role="presentation")
+                    button.nav-link#exterior-tab(data-bs-toggle="tab" data-bs-target="#exterior" type="button" role="tab" aria-controls="exterior" aria-selected="false") Exteriores
+                  li.nav-item(role="presentation")
+                    button.nav-link#recorrido-tab(data-bs-toggle="tab" data-bs-target="#recorrido" type="button" role="tab" aria-controls="recorrido" aria-selected="false") Recorrido 360°
+            .tab-content#tabContentParent
+              .tab-pane.fade.show.active#interior(role="tabpanel" aria-labelledby="interior-tab")
+                .row.justify-content-center.gy-3
+                  .col-lg-6
+                    ul.nav.nav-tabs-2.row.gy-3#tabChild1(role="tablist")
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link.active#lobby-tab1(data-bs-toggle="tab" data-bs-target="#lobby1" type="button" role="tab" aria-controls="lobby1" aria-selected="true")
+                          span.icon-building.icon-md.me-2
+                          span Lobby de ingreso
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#gimnasio-tab1(data-bs-toggle="tab" data-bs-target="#gimnasio1" type="button" role="tab" aria-controls="gimnasio1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Gimnasio
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#usosMultiples-tab1(data-bs-toggle="tab" data-bs-target="#usosMultiples1" type="button" role="tab" aria-controls="usosMultiples1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Sala de usos multiples
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#jardin-tab1(data-bs-toggle="tab" data-bs-target="#jardin1" type="button" role="tab" aria-controls="jardin1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Jardineras
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#terraza-tab1(data-bs-toggle="tab" data-bs-target="#terraza1" type="button" role="tab" aria-controls="terraza1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Terraza
+                    .row.d-none.d-lg-block
+                      .col-12.mt-4
+                        a.btn.btn-primary.btn-lg(href="#form-banner") Cotiza aquí
+                  .col-lg-6
+                    .tab-content#tabContentChild1
+                      .tab-pane.fade.show.active#lobby1(role="tabpanel" aria-labelledby="lobby-tab1")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#gimnasio1(role="tabpanel" aria-labelledby="gimnasio-tab1")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#usosMultiples1(role="tabpanel" aria-labelledby="usosMultiples-tab1")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#jardin1(role="tabpanel" aria-labelledby="jardin-tab1")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#terraza1(role="tabpanel" aria-labelledby="terraza-tab1")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+              .tab-pane.fade#areas(role="tabpanel" aria-labelledby="areas-tab")
+                .row.justify-content-center.gy-3
+                  .col-lg-6
+                    ul.nav.nav-tabs-2.row.gy-3#tabChild2(role="tablist")
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link.active#lobby-tab2(data-bs-toggle="tab" data-bs-target="#lobby2" type="button" role="tab" aria-controls="lobby1" aria-selected="true")
+                          span.icon-building.icon-md.me-2
+                          span Lobby de ingreso
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#gimnasio-tab2(data-bs-toggle="tab" data-bs-target="#gimnasio2" type="button" role="tab" aria-controls="gimnasio1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Gimnasio
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#usosMultiples-tab2(data-bs-toggle="tab" data-bs-target="#usosMultiples2" type="button" role="tab" aria-controls="usosMultiples1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Sala de usos multiples
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#jardin-tab2(data-bs-toggle="tab" data-bs-target="#jardin2" type="button" role="tab" aria-controls="jardin1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Jardineras
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#terraza-tab2(data-bs-toggle="tab" data-bs-target="#terraza2" type="button" role="tab" aria-controls="terraza1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Terraza
+                    .row.d-none.d-lg-block
+                      .col-12.mt-4
+                        a.btn.btn-primary.btn-lg(href="#form-banner") Cotiza aquí
+                  .col-lg-6
+                    .tab-content#tabContentChild2
+                      .tab-pane.fade.show.active#lobby2(role="tabpanel" aria-labelledby="lobby-tab2")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#gimnasio2(role="tabpanel" aria-labelledby="gimnasio-tab2")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#usosMultiples2(role="tabpanel" aria-labelledby="usosMultiples-tab2")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#jardin2(role="tabpanel" aria-labelledby="jardin-tab2")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#terraza2(role="tabpanel" aria-labelledby="terraza-tab2")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+              .tab-pane.fade#exterior(role="tabpanel" aria-labelledby="exterior-tab")
+                .row.justify-content-center.gy-3
+                  .col-lg-6
+                    ul.nav.nav-tabs-2.row.gy-3#tabChild3(role="tablist")
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link.active#lobby-tab3(data-bs-toggle="tab" data-bs-target="#lobby3" type="button" role="tab" aria-controls="lobby1" aria-selected="true")
+                          span.icon-building.icon-md.me-2
+                          span Lobby de ingreso
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#gimnasio-tab3(data-bs-toggle="tab" data-bs-target="#gimnasio3" type="button" role="tab" aria-controls="gimnasio1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Gimnasio
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#usosMultiples-tab3(data-bs-toggle="tab" data-bs-target="#usosMultiples3" type="button" role="tab" aria-controls="usosMultiples1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Sala de usos multiples
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#jardin-tab3(data-bs-toggle="tab" data-bs-target="#jardin3" type="button" role="tab" aria-controls="jardin1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Jardineras
+                      li.nav-item.col-6(role="presentation")
+                        button.nav-link#terraza-tab3(data-bs-toggle="tab" data-bs-target="#terraza3" type="button" role="tab" aria-controls="terraza1" aria-selected="false")
+                          span.icon-building.icon-md.me-2
+                          span Terraza
+                    .row.d-none.d-lg-block
+                      .col-12.mt-4
+                        a.btn.btn-primary.btn-lg(href="#form-banner") Cotiza aquí
+                  .col-lg-6
+                    .tab-content#tabContentChild3
+                      .tab-pane.fade.show.active#lobby3(role="tabpanel" aria-labelledby="lobby-tab3")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#gimnasio3(role="tabpanel" aria-labelledby="gimnasio-tab3")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#usosMultiples3(role="tabpanel" aria-labelledby="usosMultiples-tab3")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#jardin3(role="tabpanel" aria-labelledby="jardin-tab3")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+                      .tab-pane.fade#terraza3(role="tabpanel" aria-labelledby="terraza-tab3")
+                        .img-extension
+                          a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalEspacios" )
+                          img.img-fluid(src="/gfx/png/lobby.png")
+                          .img-extension-caption
+                            .img-extension-caption-title Acabados
+                            p Gabinetes de madera incluido
+              .tab-pane.fade#recorrido(role="tabpanel" aria-labelledby="recorrido-tab")
+                img.img-fluid(src="/gfx/png/360.png")          
+          .row.d-lg-none.justify-content-center
+            .col-auto.mt-4
+              a.btn.btn-primary.btn-lg(href="#form-banner") Cotiza aquí
+    .container.py-4.py-lg-5
+      .section-hash#planes
+        .row
+          .col-12.pt-5.text-center
+            .highlight-title-center Un depa adaptado a ti
+          .col-12.pt-5
+            .row.mb-5.gy-4.align-items-stretch
+              .col-lg-3
+                form.row.gy-3
+                  .col-6.col-lg-12
+                    select.form-select.theme-2
+                      option(value="" selected disabled) Dormitorios
+                      option(value="1") 1
+                      option(value="2") 2
+                      option(value="3") 3
+                  .col-6.col-lg-12
+                    select.form-select.theme-2
+                      option(value="" selected disabled) Piso
+                      option(value="1") 1
+                      option(value="2") 2
+                      option(value="3") 3
+                  .col-lg-12
+                    label.form-label.mb-3 Selecciona metraje
+                    .row.gy-3
+                      .col-6.col-lg-12
+                        .d-grid
+                          a.btn.btn-option(href="#") 45 Mtrs2
+                      .col-6.col-lg-12
+                        .d-grid
+                          a.btn.btn-option(href="#") 75 Mtrs2
+                      .col-6.col-lg-12
+                        .d-grid
+                          a.btn.btn-option(href="#") 95 Mtrs2
+              .col-lg-9
+                .row.gy-3.align-items-stretch
+                  .col-lg-4
+                    .box-item-2
+                      .px-3.py-4
+                        .highlight-subtitle Dpto. 404
+                        .row
+                          .col-6.col-lg-12
+                            .row
+                              .col-auto.col-lg-2
+                                span.icon-bed.color-primary
+                              .col-auto.col-lg-9.ps-0
+                                span 2 dormitorios
+                          .col-6.col-lg-12
+                            .row
+                              .col-auto.col-lg-2
+                                span.icon-toilet.color-primary
+                              .col-auto.col-lg-9.ps-0
+                                span 2 baños
+                      hr
+                      .px-3.py-2
+                        .fw-bold Área total: 60 m2
+                      hr
+                      .px-3.py-0
+                        .row
+                          .col-6.col-lg-12 Área común 1
+                          .col-6.col-lg-12 Área común 1
+                          .col-6.col-lg-12 Área común 1
+                          .col-6.col-lg-12 Área común 1
+                      hr
+                      .px-5.px-lg-4.pt-2.pb-4
+                        .row.align-items-center
+                          .col-4
+                            img.img-fluid(src="/gfx/png/plano.png")
+                          .col-8
+                            .row
+                              .col-6.col-lg-12
+                                .fw-bold.fs-4 DESDE
+                              .col-6.col-lg-12
+                                .fw-bold.fs-5.color-primary S/400.000
+                          .col-12.pt-3
+                            .d-grid
+                              a.btn.btn-primary.btn-sm(href="#form-banner") Solicita información
+                  .col-lg-8
+                    .img-extension
+                      a.img-extension-btn(href="#" data-bs-toggle="modal" data-bs-target="#modalPlanes" )
+                      img.img-fluid(src="/gfx/png/planos.png")
+  section.section-hash.section.section-design-right#location
+    .container.py-4.py-lg-5
+      .row.gy-4
+        .col-lg-4
+          .highlight-title Ubicación estratégica cerca de los mejores lugares de Lima
+          .d-grid.gap-4
+            .row.gy-4
+              .col-auto
+                span.icon-location.icon-lg.color-secondary
+              .col-10
+                p.fw-bold Ubicación
+                p Av.República de Chile 699, Jesús María
+            .row
+              .col-3
+                a.btn.btn-sm.btn-option-2.active(href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit")
+                  span.icon-building.icon-md
+              .col-3
+                a.btn.btn-sm.btn-option-2(href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit")
+                  span.icon-building.icon-md
+              .col-3
+                a.btn.btn-sm.btn-option-2(href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit")
+                  span.icon-building.icon-md
+              .col-3
+                a.btn.btn-sm.btn-option-2(href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Lorem ipsum dolor sit")
+                  span.icon-building.icon-md
+            .d-block.d-lg-none
+              .ratio.ratio-16x9
+                <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYWdothvIBZER1C5TR77Of4M&key=AIzaSyBkvoQQIteU-GxxWDTuDILSxYih55KBuWg"></iframe>
+              .row.mt-3
+                .col-7.col-lg-auto
+                  .d-grid
+                    a.btn.btn-primary-line(href="#")
+                      span.icon-maps.icon-md.me-2
+                      span Google Maps
+                .col-5.col-lg-auto
+                  .d-grid
+                    a.btn.btn-primary-line(href="#")
+                      span.icon-waze.icon-md.me-2
+                      span Waze
+            .d-grid.gap-3
+              label
+                span.icon-shoes.icon-rounded.me-2
+                span A 5 min de la iglesia parede sufrir
+              label
+                span.icon-shoes.icon-rounded.me-2
+                span A 15 min de plaza mayor
+              label
+                span.icon-shoes.icon-rounded.me-2
+                span A 20 min del parque del sol
+              label
+                span.icon-shoes.icon-rounded.me-2
+                span A 20 min del parque del sol
+          .row.mt-4
+            .col-12
+              .btn.btn-primary(href="#form-banner") Solicita información
+        .col-lg-8.d-none.d-lg-block
+          .ratio.ratio-16x9
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJYWdothvIBZER1C5TR77Of4M&key=AIzaSyBkvoQQIteU-GxxWDTuDILSxYih55KBuWg"></iframe>
+          .row.mt-3
+            .col-7.col-lg-auto
+              .d-grid
+                a.btn.btn-primary-line(href="#")
+                  span.icon-maps.icon-md.me-2
+                  span Google Maps
+            .col-5.col-lg-auto
+              .d-grid
+                a.btn.btn-primary-line(href="#")
+                  span.icon-waze.icon-md.me-2
+                  span Waze
+    .container.py-4.py-lg-5
+      .row
+        .col-12.pt-5.text-center
+          .highlight-title-center Preguntas frecuentes
+        .col-12.pt-5
+          .accordion.theme-2#accordionQuestions
+            .accordion-item
+              .accordion-header#heading1
+                button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1") Pregunta o duda
+              #collapse1.accordion-collapse.collapse.show(aria-labelledby="heading1" data-bs-parent="#accordionQuestions")
+                .accordion-body
+                  p Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nostra non. Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nos
+            .accordion-item
+              .accordion-header#heading2
+                button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2") Pregunta o duda
+              #collapse2.accordion-collapse.collapse(aria-labelledby="heading2" data-bs-parent="#accordionQuestions")
+                .accordion-body
+                  p Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nostra non. Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nos
+            .accordion-item
+              .accordion-header#heading3
+                button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3") Pregunta o duda
+              #collapse3.accordion-collapse.collapse(aria-labelledby="heading3" data-bs-parent="#accordionQuestions")
+                .accordion-body
+                  p Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nostra non. Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nos
+            .accordion-item
+              .accordion-header#heading4
+                button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4") Pregunta o duda
+              #collapse4.accordion-collapse.collapse(aria-labelledby="heading4" data-bs-parent="#accordionQuestions")
+                .accordion-body
+                  p Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nostra non. Lorem ipsum dolor sit amet consectetur adipiscing elit nulla, tristique ultricies sollicitudin interdum nisl lacus nos
+  section.section.bg-color-2
+    .container.py-4.py-lg-5
+      .row.py-4.py-lg-5
+        .col-lg-12
+          .highlight-big También te puede interesar
+      .row.py-4.py-lg-5
+        .col-lg-12
+          .owl-carousel.carousel-projects
+            .project-item
+              .project-item-info Entrega inmediata
+              .project-item-image
+                img.img-fluid(src="/gfx/png/bg-lince.png")
+              .project-item-caption
+                .project-item-caption-title Lince
+                p Prolong. Iquitos 1843, Lince
+            .project-item
+              .project-item-info En Planos
+              .project-item-image
+                img.img-fluid(src="/gfx/png/bg-lucid.png")
+              .project-item-caption
+                .project-item-caption-title Lucid
+                p Prolong. Iquitos 1843, Lince
+            .project-item
+              .project-item-info Entrega inmediata
+              .project-item-image
+                img.img-fluid(src="/gfx/png/bg-brena.png")
+              .project-item-caption
+                .project-item-caption-title Breña
+                p Prolong. Iquitos 1843, Lince
+            .project-item
+              .project-item-info Entrega inmediata
+              .project-item-image
+                img.img-fluid(src="/gfx/png/bg-quintanas.png")
+              .project-item-caption
+                .project-item-caption-title Las quintanas
+                p Prolong. Iquitos 1843, Lince

@@ -1,0 +1,21 @@
+header.header
+  .container
+    .row.align-items-center.justify-content-center
+      .col-lg-8
+        ul.menu
+          li.menu-item.d-lg-none
+            a.menu-toggle(href="#")
+              span.me-2 Menu
+              span.icon-menu
+          each val, index in nav
+            - var currentClass = val.title == pageTitle ? 'active' : ''
+            - var currentClass = index == 0 ? 'active' : ''
+            if val.img
+              li.menu-item
+                a(class=currentClass href=val.href)
+                  img(src=val.img)
+            else
+              li.menu-item.d-none.d-lg-block
+                a.nav-link(class=currentClass href=val.href)= val.title
+          li.menu-item.d-lg-none
+            .px-4

@@ -1,0 +1,31 @@
+{
+  "siteName": "Astoria Landing",
+  "siteDescription": "Astoria Landing website description.",
+  "nav": [
+    {
+      "title": "Características",
+      "href": "#features",
+      "icon": "icon-products"
+    },
+    {
+      "title": "Galería",
+      "href": "#gallery",
+      "icon": "icon-programs"
+    },
+    {
+      "img": "/gfx/svg/logo.svg",
+      "href": "/",
+      "icon": "icon-programs"
+    },
+    {
+      "title": "Planos",
+      "href": "#planes",
+      "icon": "icon-about-us"
+    },
+    {
+      "title": "Ubicación",
+      "href": "#location",
+      "icon": "icon-news"
+    }
+  ]
+}

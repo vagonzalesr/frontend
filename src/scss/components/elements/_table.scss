@@ -1,0 +1,17 @@
+table.table {
+  tr td {
+    padding: 0.75rem 0.75rem;
+  }
+}
+
+.table-success {
+  --bs-table-bg: #EFF7F3;
+  --bs-table-striped-bg: #EFF7F3;
+  --bs-table-striped-color: #000;
+  --bs-table-active-bg: #EFF7F3;
+  --bs-table-active-color: #000;
+  --bs-table-hover-bg: #EFF7F3;
+  --bs-table-hover-color: #000;
+  color: #000;
+  border-color: #EFF7F3;
+}

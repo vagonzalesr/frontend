@@ -1,0 +1,27 @@
+{
+  "eslintConfig": {
+    "configFile": "helpers.proot/.eslintrc.json",
+    "fix": true,
+    "quiet": true
+  },
+  "includeConfig": {
+    "hardFail": true,
+    "includePaths": [
+      "helpers.proot/node_modules"
+    ]
+  },
+  "babelConfig": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry",
+          "corejs": "3.37"
+        }
+      ]
+    ]
+  },
+  "renameConfig": {
+    "suffix": ".min"
+  }
+}

@@ -1,0 +1,81 @@
+.accordion {
+  &.theme-2 {
+    .accordion-item {
+      border: 0;
+
+      .accordion-button {
+        color: #013732;
+        border-bottom: 2px solid #27beaf;
+        padding: 1.25rem 0.25rem;
+        border-radius: 0;
+
+        &::after {
+          background-image: url("data:image/svg+xml,%3Csvg width='16' height='14' viewBox='0 0 16 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.999998 5.17188L8 12.1719L15 5.17187' stroke='%23474C62' stroke-width='2'/%3E%3Crect x='7.828' y='8.68652' width='6.14213' height='6.14213' transform='rotate(-135 7.828 8.68652)' fill='%23474C62'/%3E%3C/svg%3E");
+        }
+
+        // &:not(.collapsed) {
+        //   color: #4faa00;
+        // }
+      }
+
+      .accordion-body {
+        padding: 1.25rem 0.25rem 0;
+      }
+    }
+  }
+
+  .accordion-item {
+    border: 1px solid;
+    margin-bottom: 1rem;
+
+    .accordion-header {
+      .accordion-button {
+        border-radius: 0;
+        appearance: none;
+        font-weight: bold;
+
+        &:focus {
+          z-index: 3;
+          border-color: none;
+          outline: 0;
+          box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .accordion-collapse {
+      border: 0;
+
+      .accordion-body {
+        padding: 1.25rem 0.25rem 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .accordion {
+    .accordion-item {
+      border: 1px solid;
+      margin-bottom: 1rem;
+
+      .accordion-header {
+        .accordion-button {
+          font-size: 1.5rem;
+        }
+      }
+
+      .accordion-collapse {
+        border: 0;
+
+        .accordion-body {
+          padding: 1.25rem 0.25rem 0;
+        }
+      }
+    }
+  }
+}

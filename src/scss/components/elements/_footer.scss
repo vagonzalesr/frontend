@@ -1,0 +1,47 @@
+.footer {
+  background: #222F4C;
+  color: #fff;
+  font-family: $font-delta;
+
+  a {
+    color: inherit;
+    font-size: inherit;
+  }
+
+  hr {
+    border-bottom: 1px dashed #fff;
+  }
+
+  .hr-inline-end {
+    border-right: 1px dashed #fff;
+  }
+
+  .hr-block-end {
+    border-bottom: 1px dashed #fff;
+  }
+
+  .social-network {
+    font-size: 1.75rem;
+  }
+
+  .highlight-word {
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .footer {
+    padding-bottom: 2rem;
+
+    .social-network {
+      font-size: 2.25rem;
+    }
+  }
+}
+
+.rita-advice {
+  background: #00371a;
+  border-radius: 20px;
+  padding: 1rem 1.5rem;
+}

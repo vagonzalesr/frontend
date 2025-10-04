@@ -1,0 +1,18 @@
+extends /_layout/layout.pug
+
+block variables
+  - pageTitle = "404"
+
+block content
+  .bg-color-1.bg-design-3
+    .container-fluid
+      .row
+        .col-lg-6.py-5.px-5.bg-design-1.text-center
+          .py-5            
+            p.highlight-big-2
+              small Error
+              span 404
+            p.highlight-title-simple No pudimos encontrar lo que estabas buscando
+            p Pero te podemos ofrecer muchas cosas más.
+            a.btn.btn-primary(href="/") IR A INICIO
+          

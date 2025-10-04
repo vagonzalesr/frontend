@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Producto alfamax 1",
+    "link": "/producto_detalle.html",
+    "price": "30",
+    "image": "/gfx/png/producto_alfamax.png"
+  },
+  {
+    "name": "Producto alfamax 2",
+    "link": "/producto_detalle.html",
+    "price": "30",
+    "image": "/gfx/png/producto_alfamax.png"
+  },
+  {
+    "name": "Producto alfamax 3",
+    "link": "/producto_detalle.html",
+    "price": "40",
+    "image": "/gfx/png/producto_alfamax.png"
+  },
+  {
+    "name": "Producto alfamax 4",
+    "link": "/producto_detalle.html",
+    "price": "40",
+    "image": "/gfx/png/producto_alfamax.png"
+  }
+]

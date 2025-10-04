@@ -1,0 +1,62 @@
+.video-container {
+  position: relative;
+  height: 100%;
+
+  .video-poster {
+    height: 100%;
+  }
+
+  .video-play-button {
+    position: absolute;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.25;
+    background: rgba($color: #000, $alpha: 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 0px;
+      height: 0px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin-left: 3px;
+      border-top: 1rem solid transparent;
+      border-bottom: 1rem solid transparent;
+      border-left: 1.75rem solid rgba($color: #fff, $alpha: 0.75);
+      transition: all 0.3s ease-in-out;
+    }
+
+    &:hover {
+      background: rgba($color: #000, $alpha: 1);
+
+      &:before {
+        border-left: 1.75rem solid rgba($color: #fff, $alpha: 1);
+      }
+    }
+
+    .video-icon-placeholder:before {
+      font-size: 5rem;
+    }
+  }
+
+  .video-poster {
+    background-repeat: no-repeat !important;
+    background-position: 50% 50% !important;
+    background-size: cover !important;
+    background-color: transparent !important;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .video-container {
+    height: 80vh;
+  }
+}

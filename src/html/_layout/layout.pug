@@ -1,0 +1,18 @@
+doctype
+html(lang="en")
+  include variables.pug
+  include /_partials/head.pug
+  body
+    include /_partials/header.pug
+    include /_partials/menu_sidebar.pug
+    main.main
+      .content
+        block content
+    include /_partials/footer.pug
+    include /_partials/modal_confirm.pug
+    include /_partials/modal_thanks.pug
+    include /_partials/modal_photos.pug
+    include /_partials/modal_planes.pug
+    include /_partials/modal_espacios.pug
+    include /_partials/modal_video.pug
+    include /_assets/scripts.pug

@@ -1,0 +1,52 @@
+.region .figure {
+  fill: #c4c4c4;
+  stroke-width: 0.1px;
+  stroke: #fff;
+  transition: fill 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.region:hover {
+  .figure {
+    fill: #dfefe7;
+  }
+
+  .tag {
+    fill: #006e34;
+  }
+}
+
+.region.active .figure {
+  fill: #006e34;
+  pointer-events: none;
+}
+
+// Custom Popover & Tooltip
+
+.popover,
+.tooltip {
+  &.theme-map {
+    background-color: #4faa00;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    border: none;
+    padding: 0;
+
+    .popover-header,
+    .tooltip-inner {
+      background: transparent;
+      border: none;
+      font-weight: normal;
+      font-size: 1rem;
+      max-width: 200px;
+      padding: 0.35rem 0.5rem;
+      color: #fff;
+      text-align: center;
+      border-radius: none;
+    }
+  }
+}

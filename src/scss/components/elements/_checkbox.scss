@@ -1,0 +1,62 @@
+.form-check {
+  padding-left: 2em;
+
+  .form-check-input[type="radio"],
+  .form-check-input[type="checkbox"] {
+    border-radius: 0;
+    border: 1px solid #c8c8c8;
+    transition: 0.3s all ease-in-out;
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0;
+    margin-left: -2em;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .form-check-input:checked[type="radio"],
+  .form-check-input:checked[type="checkbox"] {
+    display: block;
+    background: #c1b2bc;
+    background-size: 80% 80%;
+    background-position: center center;
+  }
+
+  &.with-bg {
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border-radius: 30px;
+    background-color: #eff7f3;
+  }
+}
+
+.form-check-2 {
+  display: flex;
+  align-items: center;
+
+  .form-check-input[type="radio"],
+  .form-check-input[type="checkbox"] {
+    border-radius: 0px;
+    border: 1px solid #4faa00;
+    transition: 0.3s all ease-in-out;
+    margin-right: 0.5rem;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  .form-check-input:checked[type="radio"],
+  .form-check-input:checked[type="checkbox"] {
+    display: block;
+    background-color: transparent;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12.855' height='9.849' viewBox='0 0 12.855 9.849'%3E%3Cpath id='Trazado_584' data-name='Trazado 584' d='M2890.657,313.059l3.936,3.936,2.283-2.354,5.211-5.373' transform='translate(-2889.95 -308.571)' fill='none' stroke='%234faa00' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+  }
+}

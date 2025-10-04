@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "general-project-vgonzales"
+  },
+  "targets": {
+    "general-project-vgonzales": {
+      "hosting": {
+        "frontend": [
+          "frontend"
+        ]
+      }
+    }
+  }
+}

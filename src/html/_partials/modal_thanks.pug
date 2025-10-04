@@ -1,0 +1,11 @@
+.modal.fade#modalThanks(tabindex="-1" aria-labelledby="modalThanks" aria-hidden="true")
+  .modal-dialog.modal-dialog-centered.modal-lg-custom.modal-no-background
+    .modal-content.p-4
+      button.btn-close(type="button" data-bs-dismiss="modal" aria-label="Close")
+      .modal-body.text-center
+        .mb-3
+          img.img-fluid(alt="Point Chile" src="/gfx/svg/logo-chile.svg")
+        .mb-3
+          b.highlight-title-light-simple= modalThanksTitle ? modalThanksTitle : '¡Gracias!'
+        .mb-3
+          p= modalThanksBody ? modalThanksBody : 'En breve un asesor se comunicará contigo.'

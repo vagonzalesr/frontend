@@ -1,0 +1,15 @@
+.menu-sidebar
+  .menu-sidebar-body
+    a(href="#").menu-sidebar-close
+    ul.menu-sidebar-list
+      li.menu-sidebar-list-title
+        a(href="/")
+          span Bienvenido
+      each val, index in nav
+        - var currentClass = val.title == pageTitle ? 'active' : ''
+        - var currentClass = index == 0 ? 'active' : ''
+        if val.img
+        else
+          li.menu-sidebar-item(class=currentClass)
+            a(href=val.href)= val.title
+      

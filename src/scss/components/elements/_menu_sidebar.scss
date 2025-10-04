@@ -1,0 +1,121 @@
+.menu-sidebar {
+  display: none;
+  position: fixed;
+  width: 80%;
+  left: -80%;
+  top: 0;
+  bottom: 0;
+  padding: 5rem 1.5rem;
+  z-index: 999;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  backface-visibility: hidden;
+
+  &.active {
+    left: 0;
+  }
+
+  .menu-sidebar-close {
+    position: absolute;
+    top: 6.5rem;
+    right: 2rem;
+    background: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='15' height='16' viewBox='0 0 15 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 15L2 8L9 1' stroke='%23474C62' stroke-width='2'/%3E%3Crect width='6.14213' height='6.14213' transform='matrix(0.707107 0.707107 0.707107 -0.707107 5.48535 8.17163)' fill='%23474C62'/%3E%3C/svg%3E");
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    cursor: pointer;
+    z-index: 99;
+  }
+
+  .menu-sidebar-footer {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-top: 2px dashed #fff;
+    border-bottom: 2px dashed #fff;
+
+    a {
+      color: inherit;
+    }
+  }
+
+  .menu-sidebar-body {
+    scroll-behavior: auto;
+    padding: 1rem 0;
+    max-height: 85%;
+    overflow-y: auto;
+
+    .menu-sidebar-list {
+      list-style: none;
+      padding: 0;
+      width: 100%;
+
+      .menu-sidebar-item {
+        position: relative;
+        padding: 1.5rem 1rem;
+        vertical-align: middle;
+
+        a {
+          position: relative;
+          color: #272525;
+        }
+
+        &:first-of-type {
+          margin-inline-start: 0;
+        }
+
+        &.active {
+          a::before {
+            content: "";
+            position: absolute;
+            width: 15vw;
+            height: 3vh;
+            vertical-align: middle;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg width='67' height='21' viewBox='0 0 67 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0)'%3E%3Cpath d='M10.628 10.561L18.5835 18.4971L26.166 10.9273L64.2032 10.9273L64.2032 11.904L67 11.904L67 9.09591L64.2032 9.09591L64.2032 10.0727L26.2904 10.0727L18.7078 2.50289L10.628 10.561ZM24.923 10.9273L18.5835 17.2761L11.8711 10.561L18.7078 3.72382L25.0473 10.0727L19.4536 10.0727L19.4536 10.9884L24.923 10.9884L24.923 10.9273Z' fill='%23CDAE8D'/%3E%3Cpath d='M10.5037 9.23697e-07L21.0696 10.561L10.628 21L6.70612e-06 10.439L10.5037 9.23697e-07ZM18.77 10.561L10.5037 2.31977L2.36179 10.439L10.628 18.6802L18.77 10.561Z' fill='%23CDAE8D'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0'%3E%3Crect width='67' height='21' fill='white' transform='translate(67 21) rotate(180)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+            bottom: -1.5rem;
+            left: -1rem;
+          }
+
+          a::after {
+            content: "";
+            position: absolute;
+            width: 15vw;
+            height: 3vh;
+            vertical-align: middle;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("data:image/svg+xml,%3Csvg width='67' height='21' viewBox='0 0 67 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M56.372 10.4389L48.4165 2.50287L40.834 10.0726H2.79685V9.09589H0V11.904H2.79685V10.9273H40.7096L48.2922 18.4971L56.372 10.4389ZM42.077 10.0726L48.4165 3.7238L55.1289 10.4389L48.2922 17.2761L41.9527 10.9273H47.5464V10.0116H42.077V10.0726Z' fill='%23CDAE8D'/%3E%3Cpath d='M56.4963 21L45.9304 10.439L56.372 0L67 10.561L56.4963 21ZM48.23 10.439L56.4963 18.6802L64.6382 10.561L56.372 2.31977L48.23 10.439Z' fill='%23CDAE8D'/%3E%3C/svg%3E");
+            bottom: -1.5rem;
+            right: -1rem;
+          }
+        }
+      }
+
+      .menu-sidebar-list-title {
+        text-transform: uppercase;
+        color: #00594e;
+        font-weight: bold;
+        font-size: 1.75rem;
+        padding: 0.75rem 1rem;
+        font-family: $font-gamma;
+
+        a {
+          color: #00594e;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991.98px) {
+  .menu-sidebar {
+    display: block;
+  }
+}
